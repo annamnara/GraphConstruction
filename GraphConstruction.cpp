@@ -1,5 +1,6 @@
 # include "GraphConstruction.hpp"
 # include "StringUtilities.hpp"
+# include "sort.h"
 # include <sstream> 
 # include<iostream>
 # include <fstream>
@@ -14,7 +15,6 @@
 # include <iterator>
 #include <ctime>  
 # include <queue>
-# include "sort.h"
 using namespace std;
 GraphConstruction::GraphConstruction()
 {

@@ -67,7 +67,8 @@ gc.distanceChoice=paramValue;
 cout << "Data Parameters are :"<< "rows= " <<gc.rows<< " \t " << "coloumns= "<<gc.coloumns << "\t"<< "file name="<<gc.filename<<endl;
 cout<< "Construction Parameters are:" <<"method= "<<gc.methodChoice << "\t" <<"distance= "<< gc.distanceChoice<<endl;
 
-
+clock_t t; 
+t=clock();
 gc.LoadData();
 //gc.DisplayData();
 gc.DistanceMatrixCal();
@@ -77,6 +78,8 @@ gc.WeightMatrixCal();
 //gc.DisplayDistanceMatrix();
 
 gc.WriteWeightMatrixtoFile();
+t=clock()-t;
+cout<< "TIME TAKEN " << ((float)t)/CLOCKS_PER_SEC<<"\n";
 //gc.WriteDistanceMatrixtoFile();
 
 }
